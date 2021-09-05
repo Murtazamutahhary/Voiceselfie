@@ -1,0 +1,59 @@
+<html>
+
+<head>
+    <title>My Selfie App</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+
+    <link href="style.css" rel="stylesheet">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/webcamjs/1.0.26/webcam.min.js"></script>
+
+    <link href='https://fonts.googleapis.com/css?family=Notable' rel='stylesheet'>
+    <link href='https://fonts.googleapis.com/css?family=Norican' rel='stylesheet'>
+
+</head>
+
+<body>
+    <div class="container">
+        <center>
+            <a href="" id="link" download="selfie.png"></a>
+            <h1 class="vsa">Voice Selfie App
+                <img src="selfie.jpeg" id="logo_img">
+
+            </h1>
+            <hr>
+            <label style="color:red; " class="prmi">Please press allow as soon as popup comes. After you give a voice
+                command</label>
+
+            <div class="form-group">
+                <h1 style="color: green; font-size: 40px; font-family: Verdana, Geneva, Tahoma, sans-serif;">Say "take
+                    my selfie"</h3>
+                    <label style="font-size: 30px;">Your voice output : </label>
+                    <textarea class="form-control" id="textbox" readonly="true"></textarea>
+
+            </div>
+
+            <label style="font-size: 20px; color: green">Press the Start button</label>
+            <br>
+
+            <button id="start-btn" class="btn btn-danger">Start</button>
+            <br>
+
+            <label>Your webcam : </label>
+            <div id="camera"></div>
+
+            <br>
+
+            <label>Your selife Will Display Here: </label>
+            <div id="result"></div>
+
+        </center>
+    </div>
+
+    <script src="main.js"></script>
+</body>
+
+
+</html>
